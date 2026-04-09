@@ -46,12 +46,21 @@
     <li><a href="https://github.com/hazukiiiii1485/Unity-Material-Management-Tools">コード類一覧はこちら(UnityAssetTools)</a></li>
     <p>概要：unityのプロジェクト内で使用している素材を一覧表示、素材の使用箇所毎にタグで分別を行えるようにし、一括管理をしやすくしました</p>
     <div class="slideshow">
-    <img src="https://github.com/hazukiiiii1485/Unity-Material-Management-Tools/blob/main/screenshots/タグ%2Cカテゴリ変更時.png" alt="アイテムに個別でタグをつける時">
-    <img src="https://github.com/hazukiiiii1485/Unity-Material-Management-Tools/blob/main/screenshots/素材スキャン時.png" alt="プロジェクト内で使用しているアイテムをスキャン時">
-    <img src="https://github.com/hazukiiiii1485/Unity-Material-Management-Tools/blob/main/screenshots/重複スキャン時.png" alt="重複アイテムを特定するためのスキャン時">
+    <img id = "slide1" src="https://github.com/hazukiiiii1485/Unity-Material-Management-Tools/blob/main/screenshots/タグ%2Cカテゴリ変更時.png" alt="アイテムに個別でタグをつける時">
 </div>
   </ul>
 </nav>
+
+<script>
+const images1 = ["https://github.com/hazukiiiii1485/Unity-Material-Management-Tools/blob/main/screenshots/タグ%2Cカテゴリ変更時.png","https://github.com/hazukiiiii1485/Unity-Material-Management-Tools/blob/main/screenshots/素材スキャン時.png",
+                 "https://github.com/hazukiiiii1485/Unity-Material-Management-Tools/blob/main/screenshots/重複スキャン時.png"];
+let index = 0;
+
+setInterval(() => {
+  index1 = (index1 + 1) % images1.length;
+  document.getElementById("slide1").src = images1[index1];
+}, 2000);
+</script>
 
 <section>
   <h2>実績一覧</h2>
